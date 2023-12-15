@@ -9,7 +9,10 @@
     "start": "node ./index.js",
     "dev": "nodemon ./index.js"
   },
-  "keywords": [],
+  "engines": {
+    "node": ">=14.20.1"
+  },
+  "keywords": ["express","node"],
   "author": "",
   "license": "ISC",
   "dependencies": {
