@@ -50,7 +50,7 @@ app.get("/Image", (req, res) => {
   try {
     res.setHeader("Content-Type", "image/jpeg");
     const { file } = req.query;
-    const Image = fs.readFileSync("./imageDataset/" + file + ".png");
+    const Image = fs.readFileSync("./ImageDataset/" + file + ".png");
     res.send(Image);
   } catch (error) {
     return res.status(500).json({ success: false, message: error });
